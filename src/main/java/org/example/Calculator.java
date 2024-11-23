@@ -15,6 +15,9 @@ public class Calculator {
     }
 
     private double divide(double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("Divide by zero");
+        }
         return a / b;
     }
 
