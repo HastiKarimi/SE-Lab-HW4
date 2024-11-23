@@ -7,11 +7,13 @@ import io.cucumber.java.en.When;
 import static org.junit.Assert.*;
 
 public class CalculatorOperationStepDefinition {
+
     private double operand1;
     private double operand2;
     private String operator;
     private double result;
     private Exception exception;
+
     @Given("two operands {double} and {double}")
     public void twoOperandsOperandAndOperand(Double arg0, Double arg1) {
         this.operand1 = arg0;
